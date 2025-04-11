@@ -35,7 +35,7 @@ type DynamoDeploymentSpec struct {
 	// value is the DynamoNimDeployment override for that service
 	// if not set, the DynamoNimDeployment will be used as is
 	// +kubebuilder:validation:Optional
-	Services map[string]*DynamoNimDeployment `json:"services,omitempty"`
+	Services map[string]*DynamoNimDeploymentOverridesSpec `json:"services,omitempty"`
 }
 
 // DynamoDeploymentStatus defines the observed state of DynamoDeployment.
