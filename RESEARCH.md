@@ -6,6 +6,7 @@ The following tools are needed to run the examples and demos:
 - Helm: Kubernetes package manager for deploying applications
 - Minikube: Local Kubernetes environment for testing
 - kubectl: Command-line tool for interacting with Kubernetes clusters
+- Earthly: Build automation tool used by Dynamo for container image creation
 
 ### Starting Minikube with NVIDIA GPU Support
 
