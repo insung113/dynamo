@@ -8,6 +8,18 @@ The following tools are needed to run the examples and demos:
 - kubectl: Command-line tool for interacting with Kubernetes clusters
 - Earthly: Build automation tool used by Dynamo for container image creation
 
+### GitHub Container Registry Login
+
+To access private container images from GitHub Container Registry, use the following commands:
+
+```bash
+export CR_PAT=ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+export USERNAME=username
+echo $CR_PAT | docker login ghcr.io -u $USERNAME --password-stdin
+```
+
+Replace `ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx` with your GitHub Personal Access Token and `username` with your GitHub username.
+
 ### Starting Minikube with NVIDIA GPU Support
 
 To start Minikube with NVIDIA GPU support, use the following command:
