@@ -1,3 +1,12 @@
+## Required Tools
+
+The following tools are needed to run the examples and demos:
+
+- Docker: Container runtime for building and running services
+- Helm: Kubernetes package manager for deploying applications
+- Minikube: Local Kubernetes environment for testing
+- kubectl: Command-line tool for interacting with Kubernetes clusters
+
 ### Starting Minikube with NVIDIA GPU Support
 
 To start Minikube with NVIDIA GPU support, use the following command:
